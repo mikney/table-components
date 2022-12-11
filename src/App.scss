@@ -1,0 +1,83 @@
+
+
+.App {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.modal {
+  &__backdrop {
+    z-index: 1000;
+    position: fixed;
+    /*background-color: rgba(0, 0, 0, 0.15);*/
+    background-color: rgba(46, 54, 80, 0.36);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__wrapper {
+    background-color: white;
+    min-width: 200px;
+    min-height: 120px;
+    border-radius: 15px;
+  }
+  &__content {
+    padding: 10px 15px;
+    .article {
+      margin-top: 1rem;
+
+    }
+    .btn-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+  }
+}
+
+table {
+  width: 100%;
+  td, th, tr {
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: left;
+    padding: 2px 5px;
+  }
+}
+.search {
+  &-wrapper {
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+  }
+  &__title {
+    margin-right: 5px;
+  }
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--primary);
+  cursor: pointer
+;
+  &-close {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-left: auto;
+  }
+}
+:root {
+  --primary: cadetblue;
+  --success: #0fc622;
+  --error: #f83434;
+  --warning: #dcdc17;
+}
